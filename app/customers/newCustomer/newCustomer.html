@@ -1,0 +1,46 @@
+<section class="vertical grid-block">
+    <div class="primary title-bar">
+      <div class="center title" data-bind="text: getTitle()">Customers</div>
+      <span class="left">
+        <a  href="#customers">back</a>
+      </span>
+      <span class="right">
+            <a  href="#" data-bind="click:addNewCustomer">
+            Confirm
+            </a>
+      </span>
+      
+    </div>
+    <div class="grid-content">
+        <form>
+            <label>
+            <!-- First Name : -->
+            <input type="text" placeholder="First Name" data-bind="value:newCustomer.firstName">
+            </label>
+
+            <label>
+            <!-- Last Name : -->
+            <input type="text" placeholder="Last Name" data-bind="value:newCustomer.lastName">
+            </label>
+
+            <label>
+           <!--  Address : -->
+            <input type="text" placeholder="Address" data-bind="value:newCustomer.address">
+            </label>
+
+             <label>
+         <!--    Mobile : -->
+            <input type="text" placeholder="Mobile" data-bind="value:newCustomer.mobile">
+            </label>
+
+            <label>
+          <!--   E-Mail -->
+            <span class="inline-label">
+            <input type="text" placeholder="Email" data-bind="value:newCustomer.email">
+            <span class="form-label">.com</span>
+            </span>
+            </label>
+        </form>
+    </div>
+
+</section>

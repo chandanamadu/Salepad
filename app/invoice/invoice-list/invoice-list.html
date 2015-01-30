@@ -1,0 +1,32 @@
+<div class="vertical grid-block">
+    <div class="primary title-bar">
+      <div class="center title">Invoices</div>
+      <span class="left">
+       <!--  <a  href="#">Home</a> -->
+       <a href="" data-bind="click:goHome">Home</a>
+      </span>
+      <span class="right">
+          <a  href="#invoice/new-invoice">
+            <img zf-iconic="" data-src="../bower_components/foundation-apps/iconic/document.svg">
+      </a>
+      </span> 
+    </div>
+
+    <div class="grid-content">
+
+      <label>
+        <span class="inline-label">
+        <input type="search" placeholder="Search By Customer Name Or Invoice Date">
+          <a class="button">Search</a>
+        </span>
+      </label>
+
+          <div class="block-list">
+          <ul data-bind="foreach:invoiceList">
+            <li class="with-chevron">
+              <a data-bind="attr:{href: '#invoice/invoice-detail/'+id}, text:total"></a> 
+            </li>
+          </ul>
+        </div>
+    </div>
+</div>

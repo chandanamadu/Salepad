@@ -1,0 +1,41 @@
+<div class="vertical grid-block">
+    <div class="primary title-bar">
+      <div class="center title">New Item</div>
+      <span class="left">
+        <a  href="#return-management">Back</a>
+      </span>
+      <span class="right">
+      <a href="#return-management">Confirm</a>
+      </span>
+	 </div>
+
+	 <div class="grid-content">
+	 	<span> Select Customer </span>
+		  <select data-bind="foreach:customerList">
+    			<option data-bind="text:name"></option>
+		</select>​
+
+		<span> Select Item </span>
+		  <select data-bind="foreach:itemList">
+    			<option data-bind="text:$data"></option>
+		</select>​
+
+		<form>
+			  <label>
+			    Return Date
+			    <input type="date" placeholder="return date">
+			  </label>
+
+			  <label>
+			    Number Of Units 
+			    <input type="number" placeholder="units">
+			  </label>
+
+			  <label>
+			    Description 
+			    <input type="text" placeholder="description">
+			  </label>
+	
+		</form>
+	 </div>
+</div>

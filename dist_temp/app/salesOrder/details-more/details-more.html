@@ -1,0 +1,28 @@
+<div class="vertical grid-block">
+    <div class="primary title-bar">
+      <div class="center title">Order Details</div>
+      <span class="left">
+        <a  href="#sales-order">Back</a>
+      </span>  
+    </div>
+
+    <div class = "grid-content">
+      <div class = "grid-content">
+      <section class="block-list" >
+        <header></header>
+        <ul data-bind="foreach:selectedItems">
+          <li>
+           <p> <label  data-bind="text:itemGrop"> </label>
+            <span class="right" data-bind="text:selected" ></span></p>
+
+          </li>
+        </ul>
+        <ui>
+          <li>
+            <label>Total : Rs 25,000.00</label>
+          </li>
+        </ui>
+      </section>
+    </div>
+    </div>
+</div>

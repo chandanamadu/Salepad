@@ -1,0 +1,41 @@
+<div class="vertical grid-block">
+    <div class="primary title-bar">
+      <div class="center title" data-bind="text:selectPayment.cus"></div>
+      <span class="left">
+        <a  href="#payment-details">Back</a>
+      </span>
+      <span class="right">
+
+      </span>
+    </div>
+
+    <div class="grid-content">
+
+		<section class="block-list">
+		  <ul>
+		  <li>
+		  	<span>
+		   		<label >Payment Date :  <span data-bind="text:selectPayment.Date"></span></label>
+		   	</span>
+		   </li>
+		   <li>
+		   	<span>
+		   		<label >Payment Method :  <span data-bind="text:selectPayment.Pmethod"></span></label>
+		   	</span>
+		   </li>
+		   <li>
+		   	<span>
+		   		<label >Description :  <span data-bind="text:selectPayment.des"></span></label>
+		   	</span>
+		   </li>
+		   <li>
+		   	<span>
+		   		<label >Total :  <span data-bind="text:selectPayment.Amount"></span></label>
+		   	</span>
+		   </li>
+		  </ul>
+		</section>
+
+    </div>
+
+</div>

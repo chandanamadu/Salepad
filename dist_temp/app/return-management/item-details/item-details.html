@@ -1,0 +1,48 @@
+<div class="vertical grid-block">
+    <div class="primary title-bar">
+      <div class="center title" data-bind="text:selectItem.name"></div>
+      <span class="left">
+        <a  href="#return-management">Back</a>
+      </span>
+      <span class="right">
+
+      </span>
+      
+    </div>
+
+    <div class="grid-content">
+		  <section class="block-list">
+		  <header data-bind="text:selectItem.description"></header>
+		  <ul>
+		    <li ><span>
+		    	<label >Customer :  <span data-bind="text:selectItem.customer"></span></label>
+		    	</span>
+		    </li>
+		    <li ><span>
+		    	<label >Supply Date :  <span data-bind="text:selectItem.Sdate"></span></label>
+		    	</span>
+		    </li>
+		    <li ><span>
+		    	<label >Returned Date :  <span data-bind="text:selectItem.Rdate"></span></label>
+		    	</span>
+		    </li>
+		    <li >
+		    	<span>
+		    	<label >Unit Price : Rs  <span data-bind="text:selectItem.prize"></span></label>
+		    	</span>
+		    </li>
+		    <li >
+		    	<span>
+		    	<label >Units :  <span data-bind="text:selectItem.units"></span></label>
+		    	</span>
+		    </li>
+		    <li >
+		    	<span>
+		    	<label >Total : Rs   <span data-bind="text:selectItem.total"></span></label>
+		    	</span>
+		    </li>
+		    
+		  </ul>
+		</section>
+    </div>
+</div>

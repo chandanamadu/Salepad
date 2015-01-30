@@ -1,0 +1,29 @@
+<div class="vertical grid-block">
+    <div class="primary title-bar">
+      <div class="center title">New Invoice</div>
+      <span class="left">
+        <a  href="#invoice">Back</a>
+      </span>
+      <span class="right">
+        <a href="#invoice">Confirm </a>
+      </span>
+    </div>
+    <div class="grid-content">
+    	  <span> Select Customer </span>
+		      <select data-bind="foreach:customerList">
+    			   <option data-bind="value: $data, text:name"></option>
+		      </select>​
+
+        <form>
+          <label>
+            Due Date :
+              <input type="date" placeholder="Due Date">
+          </label>
+          <label>
+            Invoice Total :
+              <input type="number" placeholder="total">
+          </label>
+        </form>
+
+    </div>
+</div>

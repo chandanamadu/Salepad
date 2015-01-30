@@ -1,0 +1,39 @@
+<div class="vertical grid-block">
+    <div class="primary title-bar">
+      <div class="center title" >New Payment</div>
+      <span class="left">
+        <a  href="#payment-details">Back</a>
+      </span>
+      <span class="right">
+      	<a  href="#payment-details">Confirm</a>
+      </span>
+      
+    </div>
+    <div class="grid-content">
+    	<span> Select Customer </span>
+		<select data-bind="foreach:customerList">
+    			<option data-bind="value: $data, text:name"></option>
+		</select>​
+
+		<span> Select Payment Method </span>
+		<select data-bind="foreach:paymentMethods">
+    			<option data-bind="value: $data, text:$data"></option>
+		</select>​
+
+		<form>
+		  <label>
+		    Payment Date :
+		    <input type="date" placeholder="payment date">
+		  </label>
+		  <label>
+		    Description :
+		    <input type="text" placeholder="description">
+		  </label>
+		  <label>
+		    Total :
+		    <input type="number" placeholder="total">
+		  </label>
+		</form>
+
+    </div>
+</div>

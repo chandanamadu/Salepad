@@ -1,0 +1,31 @@
+<div class="vertical grid-block">
+    <div class="primary title-bar">
+      <div class="center title"> Todo</div> 
+      <span class="left">
+        <a  href="#">Home</a>
+      </span>
+      <span class="right">
+          <a  href="" data-bind="click:showBottomPanel">New Todo</a>
+      </span> 
+    </div>
+    <div class="grid-content">
+      <section class="block-list">
+      <ul data-bind="foreach:morningTodo">
+        <li>
+          <input type="checkbox" id="">
+          <label  data-bind="text:description" for=""></label>
+        </li>
+      </ul>
+    </section> 
+        <section class="block-list">
+        <header>Lunch</header>
+        <ul data-bind="foreach:eveningTodo">
+          <li>
+            <input type="checkbox" id="">
+            <label  data-bind="text:description" for=""></label>
+
+          </li>
+         </ul>
+      </section>
+    </div>
+</div>

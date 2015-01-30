@@ -1,0 +1,30 @@
+<div class="vertical grid-block">
+    <div class="primary title-bar">
+      <div class="center title">Customers</div>
+      <span class="left">
+       <!--  <a  href="#">Home</a> -->
+       <a href="" data-bind="click:goHome">Home</a>
+      </span>
+      <span class="right">
+      		<a  href="#customers/new-Customer">
+    				<img zf-iconic="" data-src="../bower_components/foundation-apps/iconic/person.svg">
+			</a>
+      </span> 
+    </div>
+	<div class="grid-content">
+		<label>
+			<span class="inline-label">
+			<input type="search" placeholder="Search By Customer Name">
+				<a class="button">Search</a>
+			</span>
+		</label>
+		<div class="block-list">
+			<ul data-bind="foreach: customers">
+				<li class="with-chevron">
+					<a data-bind="attr: {href: '#customers/customer-details/'+id}, text: name"></a>
+					
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

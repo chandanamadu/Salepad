@@ -1,0 +1,44 @@
+<div class="vertical grid-block">
+    <div class="primary title-bar">
+      <div class="center title">New Sales Order</div>
+      <span class="left">
+        <a  href="#sales-order">Back</a>
+      </span>
+       <span class="right">
+      		<a  href="#customers/new-Customer">
+    			<img zf-iconic="" data-src="../bower_components/foundation-apps/iconic/person.svg">
+			</a>
+			<a  href="#sales-order">
+    			confirm
+			</a>
+      </span>  
+    </div>
+    <div class="grid-content">
+		<label>
+		  <span class="inline-label">
+		    <input type="search" placeholder="Search by Item">
+		    <a href="#" class="button">Search</a>
+		  </span>
+		</label>
+	 	<div class="small-12 medium-6 grid-content">
+
+	 	<section class="block-list">
+  				<header>Total : Rs <span data-bind="text:currentTotal"></span></header>	
+  		</section>
+	 	<span> Select Customer </span>
+		  <select data-bind="foreach:customerList">
+    			<option data-bind="value: $data, text:name"></option>
+		</select>​
+
+		<div class="block-list">
+			<ul data-bind="foreach:items">
+				<li>
+					<a data-bind="text:$data"></a>
+					
+				</li>
+			</ul>
+		</div>
+		  
+	    </div>    	
+    </div>
+</div> 

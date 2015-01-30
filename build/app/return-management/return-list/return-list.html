@@ -1,0 +1,31 @@
+<div class="vertical grid-block">
+    <div class="primary title-bar">
+      <div class="center title">Return </div>
+      <span class="left">
+        <!-- <a  href="#">Home</a> -->
+        <a  href="" data-bind="click:goHome">Home</a>
+      </span>
+      <span class="right">
+      <a href="#return-management/new-item">New Item</a>
+      </span>
+	 </div>
+
+	 <div class="grid-content">
+		 <label>
+				<span class="inline-label">
+				<input type="search" placeholder="Search By Customer Name Or Return Item">
+					<a class="button">Search</a>
+				</span>
+		 </label>
+
+		 <div class="block-list">
+				<ul data-bind="foreach: returnItems">
+					<li class="with-chevron">
+						<a data-bind="attr: {href: '#return-management/item-details/'+id}, text: name"></a>
+						
+					</li>
+				</ul>
+			</div>
+	 </div>
+
+</div>
